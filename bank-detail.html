@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ootascan</title>
+    <link rel="stylesheet" href="bank-detail.css">
+</head>
+<body>
+    <div class="profile-container">
+        <div class="logos">
+            <img src="qr-scan.gif" alt="">
+        </div>
+        <h2>Enter your Bank details</h2>
+        <br><hr><br>
+        <p class="sub-text">Enter the valid payment details of the Hotel or Organization asked below</p>
+        <br><hr><br>
+        <form class="signin-form">
+            <div class="input-group">
+                <p class="msg">Enter Account number:</p>
+                <input type="text" id="hotel-name" placeholder="Account no."  required>
+                <span class="icon-i">🧾</span>
+            </div>
+            <br>
+            <div class="input-group"> 
+                <p class="msg">Re-enter account number:</p>
+                <input type="text" id="location" placeholder="Account no." required>
+                <span class="icon-i">🧾</span>
+            </div>
+            <br>
+            <div class="input-group">
+                <p class="msg">Enter password:</p>
+                <input type="text" id="email" placeholder="Password">
+                <span class="icon-i">🔑</span>
+            </div>
+          <br>
+          <div class="input-group">
+            <p class="msg">Enter IFSC code:</p>
+            <input type="text" id="name" placeholder="IFSC code" required>
+            <span class="icon-i">🔐</span>
+        </div>
+        <br>
+            <div class="input-group">
+                <p class="msg">Enter Phone number:</p>
+                <input type="tel" id="phone" placeholder="Phone no." required>
+                <span class="icon-i">📱</span>
+            </div>
+            <br>
+            <button type="submit" class="Create-account">Save Details</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Verification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="verification-container">
+        <div class="back-btn">
+            <button class="back-nav-btn">
+                <span>←</span>
+            </button>
+        </div>
+        <h2>Verify phone number</h2>
+        <p>Enter your phone number to use OotaScan and order your food.</p>
+
+        <div class="code-input">
+            <input aria-label="otp" type="text" maxlength="1" required>
+            <input aria-label="otp" type="text" maxlength="1" required>
+            <input aria-label="otp" type="text" maxlength="1" required>
+            <input aria-label="otp" type="text" maxlength="1" required>
+        </div>
+        <button class="didnt-receive1" id="resendBtn" disabled>
+            <span class="subtext">Didn't receive?</span>
+        </button>
+        <span id="timer" class="subtext">00:30</span>
+        
+        <button class="sign-up-btn">Verify OTP</button>
+        
+        <p class="terms">By signing up, you have agreed to our 
+            <button class="didnt-receive1">
+            <span class="policy">Terms & Privacy Policies</span>
+        </button>
+        </p>
+    </div>
+    <script src="otp.js"></script>
+</body>
+</html>

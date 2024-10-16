@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OotaScan Dashboard</title>
+    <link rel="stylesheet" href="created&changed.css">
+</head>
+<body>
+
+    <!-- Account Created Message -->
+    <div class="created-open">
+        <button onclick="openModal('createdModal')">Account created Successfully</button>
+    </div>
+    <div id="createdModal" class="modal">
+        <div class="modal-content">
+            <div class="header">
+                <h2>Account Created Successfully!</h2>
+            </div>
+            <div class="centered-image">
+                <img src="checked.png" alt="Centered Image">
+            </div>
+            <div class="log-buttons">
+                <button id="ok-btn" onclick="closeModal('createdModal')">Ok</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Password Changed Message -->
+    <div class="created-open">
+        <button onclick="openModal('changeModal')">Password changed</button>
+    </div>
+    <div id="changeModal" class="modal">
+        <div class="modal-content">
+            <div class="header">
+                <h2>Password Changed Successfully!</h2>
+            </div>
+            <div class="centered-image">
+                <img src="checked.png" alt="Centered Image">
+            </div>
+            <div class="log-buttons">
+                <button id="ok-btn" onclick="closeModal('changeModal')">Ok</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="created&changed.js"></script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+/* General styling */
+*{
+    margin: 0;
+    padding: 0;
+}
+    
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    width: 100%;
+}
+
+.name {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 1;
+}
+
+.on-goin{
+    filter: invert(27%) sepia(91%) saturate(7481%) hue-rotate(359deg) brightness(102%) contrast(117%)
+}
+
+.demo {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.name img {
+    width: 50px;
+    height: auto;
+}
+
+.search-container {
+    display: flex;
+    text-align: center;
+    height: 40px;
+    border-radius: 100px;
+}
+
+.search-container img {
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+}
+.search-container button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.search-section {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.search-section input{
+    width: 90%;
+    border-radius: 100px;
+}
+
+.search-btn {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.nav {
+    display: flex;
+    background-color: white;
+    overflow: hidden;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    justify-content: space-around;
+    width: 50px;
+}
+
+.nav-btn {
+    background-color: transparent; /* Keep the background transparent */
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 10px; /* Spacing around the button */
+}
+
+.icon {
+    width: 28px; /* Adjust icon size */
+    height: 28px; /* Adjust icon size */
+    margin-bottom: 5px; /* Spacing between icon and text */
+    transition: color 0.3s ease; /* Smooth transition for icon color change */
+    color: #666; /* Default icon color */
+    padding-top: 50px;
+}
+.nav-btn span {
+    font-size: 12px; /* Text size */
+    color: #666; /* Default text color */
+}
+
+.nav-btn:hover {
+    background-color: #f0f0f0; /* Light gray on hover */
+}
+
+/*Logout modal css*/
+.open-modal-btn {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.modal-content {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+
+  /* Centered Image in Modal */
+.centered-image img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+  /* Buttons inside the Modal */
+.log-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.log-buttons button{
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.log-buttons button:hover {
+    background-color: darkred;
+}
+
+
+@media (max-width: 600px) {
+    .name{
+        justify-content: space-between;
+    }
+    .search-section{
+        min-width: 200px;
+        width: 100%;
+    }
+    .nav {
+        width: 100%; 
+        height: 50px; 
+        flex-direction: row; 
+        justify-content: space-around;
+        position: fixed;
+        bottom: 0;
+        z-index: 1;
+    }
+    .icon {
+        width: 20px; /* Adjust icon size */
+        height: 20px; /* Adjust icon size */
+        color: #666; /* Default icon color */
+    }
+    .nav-btn span {
+        font-size: 12px; /* Text size */
+        color: #666;
+        padding-bottom: 50px; /* Default text color */
+    }
+}
+@media (max-width: 350px) {
+    .name{
+        flex-direction: column;
+        width: 100%;
+        height: 100px;
+    }  
+}

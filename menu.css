@@ -1,0 +1,423 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+    
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    width: 100%;
+}
+
+.name {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 1;
+}
+
+.demo {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.name img {
+    width: 50px;
+    height: auto;
+}
+
+.search-container {
+    display: flex;
+    text-align: center;
+    height: 40px;
+    border-radius: 100px;
+}
+
+.search-container img {
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+}
+
+.search-container button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.search-section {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.search-section input{
+    width: 90%;
+    border-radius: 100px;
+}
+
+.search-btn {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.nav {
+    display: flex;
+    background-color: white;
+    overflow: hidden;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    justify-content: space-around;
+    width: 50px;
+}
+
+.nav-btn {
+    background-color: transparent; /* Keep the background transparent */
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 10px; /* Spacing around the button */
+}
+
+.icon {
+    width: 28px; /* Adjust icon size */
+    height: 28px; /* Adjust icon size */
+    margin-bottom: 5px; /* Spacing between icon and text */
+    transition: color 0.3s ease; /* Smooth transition for icon color change */
+    color: #666; /* Default icon color */
+    padding-top: 50px;
+}
+
+.on-goin{
+    filter: invert(27%) sepia(91%) saturate(7481%) hue-rotate(359deg) brightness(102%) contrast(117%);
+}
+
+.nav-btn span {
+    font-size: 12px; /* Text size */
+    color: #666; /* Default text color */
+}
+
+.nav-btn:hover {
+    background-color: #f0f0f0; /* Light gray on hover */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 60px;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+#add-card-btn {
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.menu-form {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: white;
+    padding: 50px;
+    border-radius: 50px;
+    width: 70%;
+}
+
+.menu-form label {
+    font-weight: bold;
+}
+
+.menu-form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.menu-form button {
+    width: 240px;
+    border: 0;
+    border-radius: 20px;
+    background-color: red;
+    height: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.menu-form button, .edit-btn{
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    border: 0;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#extras-list{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-card-container {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.menu-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.menu-card img {
+    width: 100%; /* Makes it flexible */
+    height: 200px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.menu-card .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.menu-card .content .box1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.menu-card .content .box3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.menu-card .content .box1 .box2 h3 {
+    font-size: 25px;
+    margin: 0;
+}
+
+.menu-card .content .box1 .box2 p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 14px;
+}
+
+.menu-card .content .box1 .box3 p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 14px;
+}
+
+.menu-card .content .price {
+    font-weight: bold;
+    color: green;
+}
+
+.delete-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+}
+
+.box3{
+    justify-content: center;
+    text-align: center;
+}
+
+#extras-container {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.extra-option {
+    margin-bottom: 5px;
+}
+
+.extra{
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    padding: 2px;
+}
+
+.extra .remove-extra-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.remove-extra-btn:hover {
+    background-color: darkred; /* Darker red on hover */
+}
+
+@media (max-width: 600px) {
+    .name{
+        justify-content: space-between;
+    }
+    .search-section{
+        min-width: 200px;
+        width: 100%;
+    }
+    .nav {
+        width: 100%; 
+        height: 50px; 
+        flex-direction: row; 
+        justify-content: space-around;
+        position: fixed;
+        bottom: 0;
+        z-index: 1;
+    }
+    
+    .icon {
+        width: 20px; /* Adjust icon size */
+        height: 20px; /* Adjust icon size */
+
+        color: #666; /* Default icon color */
+        
+    }
+    .nav-btn span {
+        font-size: 12px; /* Text size */
+        color: #666;
+        padding-bottom: 50px; /* Default text color */
+    }
+
+    #add-card-btn {
+        font-size: 14px; 
+        height: 40px; 
+    }
+
+    .container {
+        padding: 10px;
+        padding-bottom: 60px;
+        padding-top: 60px;
+    }
+
+    .card {
+        margin: 10px 0; 
+        min-width: 200px;
+    }
+
+    #menu-card-container {
+        flex-direction: column; /* Stack cards in a column on mobile */
+    }
+
+    .menu-card {
+        width: 300px;/* Make cards narrower on mobile */
+        margin: 10px auto;
+    }
+
+    .menu-card img {
+        width: 150px; /* Make images full-width on mobile */
+        height: 150px;
+    }
+    .menu-card .content .box1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+   
+}
+@media (max-width: 350px) {
+    .name{
+        flex-direction: column;
+        width: 100%;
+        height: 100px;
+    }
+    .container{
+        padding-top: 150px;
+    }
+    #update-card-btn{
+        width: 200px;
+    }
+    #generate-dishes-btn{
+        width: 200px;
+    }
+    .menu-card{
+        width: 200px;
+        height: 200px;
+    }
+    .menu-card img {
+        width: 70px; /* Make images full-width on mobile */
+        height: 70px;
+    }
+   
+}

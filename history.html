@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OotaScan Dashboard</title>
+    <link rel="stylesheet" href="history.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+    <div class="name1">
+        <div class="demo">
+            <img src="qr-scan.gif" alt="logo">
+            <span>OotaScan</span>
+        </div>
+        <div class="search-container">
+            <section class="search-section1">
+                <input type="text" placeholder="Search Name" id="search-bar1">
+                <button id="search-btn1" class="search-btn1">
+                    <img src="search_17dp_666666_FILL0_wght400_GRAD0_opsz20.png" alt="search">
+                </button>
+            </section>
+        </div>
+    </div>
+    <div class="nav"> 
+        <button class="nav-btn" onclick="changeColor('filter1', this)">
+            <img src="home.png" alt="Home" class="icon">
+            <span>Home</span>    
+        </button>
+        <button class="nav-btn" onclick="changeColor('filter2', this)">
+            <img src="menu.png" alt="Search" class="icon">
+            <span>Menu</span>
+        </button>
+        <button class="nav-btn" onclick="changeColor('filter3', this)">
+            <img src="clipboard.png" alt="Orders" class="icon on-goin">
+            <span>Orders</span>
+        </button>
+        <button class="nav-btn" onclick="changeColor('filter4', this)">
+            <img src="user.png" alt="Account" class="icon">
+            <span>Profile</span>
+        </button>
+        <button class="nav-btn"  onclick="changeColor('filter5', this)">
+            <img src="icons8-logout-50.png" alt="Account" class="icon">
+            <span>Logout</span>
+        </button>
+    </div>
+    <div class="container">
+        <!-- Left Sidebar: Calendar and Search -->
+        <div class="sidebar">
+            <h2>Calendar</h2>
+            <input type="text" id="order-date" placeholder="Select a date" />
+
+            <!-- Search Bar -->
+            <div class="search-section">
+                <div><h3>Search by Transaction ID</h3></div>
+                <div id="search2"><input type="text" id="search-bar" placeholder="Search Transaction ID">
+                    <button id="search-btn">Search</button></div>
+                
+            </div>
+        </div>
+
+        <!-- Right Main Area: Cards and Form -->
+        <div class="main">
+            <!-- Card Container where dynamic cards will appear -->
+            <div id="card-container"></div>
+
+            <!-- Form to add new payment -->
+            <div class="form-section">
+                <h2>Add Payment</h2>
+                <form id="payment-form">
+                    <label for="transaction-id">Transaction ID</label>
+                    <input type="text" id="transaction-id" placeholder="Enter Transaction ID" required />
+
+                    <label for="person-name">Name</label>
+                    <input type="text" id="person-name" placeholder="Enter Name" required />
+
+                    <label for="table-number">Table Number</label>
+                    <input type="number" id="table-number" placeholder="Enter Table Number" required />
+
+                    <label for="order-details">Order Details</label>
+                    <textarea id="order-details" placeholder="Enter Order Details (e.g., Pizza, Pasta)" required></textarea>
+
+                    <label for="total-cost">Total Cost</label>
+                    <input type="number" id="total-cost" placeholder="Enter Total Cost" required />
+   
+                    <button type="button" id="add-card-btn">+ Add Payment</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="history.js"></script>
+</body>
+</html>

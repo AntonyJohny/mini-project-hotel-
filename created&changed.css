@@ -1,0 +1,76 @@
+/*both are same*/
+.created-open{
+    width: 80%;
+    text-align: center;
+    padding-left: 60px;
+    padding-top: 60px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.modal-content {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+
+  /* Centered Image in Modal */
+.centered-image img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+  /* Buttons inside the Modal */
+.log-buttons {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.log-buttons button{
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.log-buttons button:hover {
+    background-color: darkred;
+}
+
+
+
+
+
+
+
+

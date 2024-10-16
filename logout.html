@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OotaScan Dashboard</title>
+    <link rel="stylesheet" href="logout.css">
+</head>
+<body>
+    <div class="name">
+        <div class="demo">
+            <img src="qr-scan.gif" alt="logo">
+            <span>OotaScan</span>
+        </div>
+        <div class="search-container">
+            <section class="search-section">
+                <input type="text" placeholder="Search Name" id="search-bar">
+                <button id="search-btn" class="search-btn">
+                    <img src="search_17dp_666666_FILL0_wght400_GRAD0_opsz20.png" alt="serach">
+                </button>
+            </section>
+        </div>
+    </div>
+    <div class="nav">
+        <button class="nav-btn" onclick="changeColor('filter1', this)">
+            <img src="home.png" alt="Home" class="icon">
+            <span>Home</span>    
+        </button>
+        <button class="nav-btn" onclick="changeColor('filter2', this)">
+            <img src="menu.png" alt="Search" class="icon">
+            <span>Menu</span>
+        </button>
+        <button class="nav-btn" onclick="changeColor('filter3', this)">
+            <img src="clipboard.png" alt="Orders" class="icon">
+            <span>Orders</span>
+        </button>
+        <button class="nav-btn" onclick="changeColor('filter4', this)">
+            <img src="user.png" alt="Account" class="icon">
+            <span>Profile</span>
+        </button>
+        <button class="nav-btn open-modal-btn" onclick="openModal()" onclick="changeColor('filter5', this)">
+            <img src="icons8-logout-50.png" alt="Account" class="icon on-goin">
+            <span>Logout</span>
+        </button>
+    </div>
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <div class="header">
+                <h2>Do you want to logout?</h2>
+            </div>
+          <div class="centered-image">
+            <img src="logout.png" alt="Centered Image" />
+          </div>
+          <div class="log-buttons">
+            <button id="logout-btn" onclick="logout()">Logout</button>
+            <button id="cancel-btn" onclick="closeModal()">Cancel</button>
+          </div>
+        </div>
+    </div>
+        <script src="logout.js"></script>
+</body>
+</html>

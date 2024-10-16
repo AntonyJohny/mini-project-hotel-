@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+    
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    width: 100%;
+}
+
+.name1 {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 1;
+}
+
+.demo {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.name1 img {
+    width: 50px;
+    height: auto;
+}
+
+.search-container {
+    display: flex;
+    text-align: center;
+    height: 40px;
+    border-radius: 100px;
+}
+
+.search-container img {
+    width: 25px;
+    height: 25px;
+    border-radius: 100px;
+}
+.search-container button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.search-section1 {
+    display: flex;
+    border: 2px;
+    justify-content: space-between;
+    min-width: 300px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 100px;
+}
+
+.search-section1 input{
+    width: 90%;
+    border-radius: 100px;
+}
+
+.search-btn1 {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.nav {
+    display: flex;
+    background-color: white;
+    overflow: hidden;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    justify-content: space-around;
+    width: 50px;
+}
+
+.nav-btn {
+    background-color: transparent; /* Keep the background transparent */
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 10px; /* Spacing around the button */
+}
+
+.icon {
+    width: 28px; /* Adjust icon size */
+    height: 28px; /* Adjust icon size */
+    margin-bottom: 5px; /* Spacing between icon and text */
+    transition: color 0.3s ease; /* Smooth transition for icon color change */
+    color: #666; /* Default icon color */
+    padding-top: 50px;
+}
+
+.on-goin{
+    filter:invert(27%) sepia(91%) saturate(7481%) hue-rotate(359deg) brightness(102%) contrast(117%);
+}
+
+.nav-btn span {
+    font-size: 12px; /* Text size */
+    color: #666; /* Default text color */
+}
+
+.nav-btn:hover {
+    background-color: #f0f0f0; /* Light gray on hover */
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    padding-left: 60px;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+/* Sidebar: Calendar and Search */
+.sidebar {
+    padding: 20px;
+    width: 40%;
+    padding-right: 20px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    height: 100%;
+    padding-left: 3%;
+}
+
+.sidebar input {
+    width: 40%;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.search-section{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#search2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.search-section input {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 100px;
+}
+
+.search-section button{
+    height: 50px;
+    width: 90px;
+    background-color: red;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+/* Main Area */
+.main {
+    width: 60%;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Form Section */
+.form-section {
+    margin-top: 20px;
+}
+
+.form-section h2 {
+    margin-bottom: 15px;
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-section form label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.form-section form input, 
+.form-section form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+#add-card-btn {
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+/* Dynamic Cards */
+#card-container {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    width: 80%;
+    padding-right: 50px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    position: relative;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.card .delete-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .name1{
+        justify-content: space-between;
+    }
+    
+    .search-section1{
+        min-width: 200px;
+        width: 100%;
+    }
+
+    #search2 ::placeholder{
+        font-size: 12px;
+    }
+    
+    .nav {
+        width: 100%; 
+        height: 50px; 
+        flex-direction: row; 
+        justify-content: space-around;
+        position: fixed;
+        bottom: 0;
+        z-index: 1;
+    }
+    
+    .icon {
+        width: 20px; /* Adjust icon size */
+        height: 20px; /* Adjust icon size */
+
+        color: #666; /* Default icon color */
+        
+    }
+    
+    .nav-btn span {
+        font-size: 12px; /* Text size */
+        color: #666;
+        padding-bottom: 50px; /* Default text color */
+    }
+    
+    #add-card-btn {
+        font-size: 14px; 
+        height: 40px; 
+    }
+
+    .container {
+        padding: 10px;
+        padding-bottom: 50px;
+        padding-top: 60px;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #card-container {
+        padding-left: 20px;
+        min-width: 200px;
+    }
+
+   
+}
+
+@media (max-width: 350px) {
+    .name1{
+        flex-direction: column;
+        width: 100%;
+        height: 100px;
+    }
+    
+    .container{
+        padding-top: 150px;
+    }
+    
+    #update-card-btn{
+        width: 200px;
+    }
+    
+    #generate-dishes-btn{
+        width: 200px;
+    }
+    
+    .card{
+        padding-right: 20px;
+    }
+    
+    .menu-card img {
+        width: 70px; /* Make images full-width on mobile */
+        height: 70px;
+    }
+}

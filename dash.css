@@ -1,0 +1,351 @@
+/* General styling */
+*{
+    margin: 0;
+    padding: 0;
+}
+    
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    width: 100%;
+}
+
+.name {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 1;
+}
+
+.demo {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.name img {
+    width: 50px;
+    height: auto;
+}
+
+.search-container {
+    display: flex;
+    text-align: center;
+    height: 40px;
+    border-radius: 100px;
+}
+
+.search-container img {
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+}
+.search-container button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.search-section {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.search-section input{
+    width: 90%;
+    border-radius: 100px;
+}
+
+.search-btn {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.nav {
+    display: flex;
+    background-color: white;
+    overflow: hidden;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    justify-content: space-around;
+    width: 50px;
+}
+
+.nav-btn {
+    background-color: transparent; /* Keep the background transparent */
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 10px; /* Spacing around the button */
+}
+
+.on-goin{
+    filter: invert(27%) sepia(91%) saturate(7481%) hue-rotate(359deg) brightness(102%) contrast(117%);
+}
+
+.icon {
+    width: 28px; /* Adjust icon size */
+    height: 28px; /* Adjust icon size */
+    margin-bottom: 5px; /* Spacing between icon and text */
+    transition: color 0.3s ease; /* Smooth transition for icon color change */
+    color: #666; /* Default icon color */
+    padding-top: 50px;
+}
+.nav-btn span {
+    font-size: 12px; /* Text size */
+    color: #666; /* Default text color */
+}
+
+.nav-btn:hover {
+    background-color: #f0f0f0; /* Light gray on hover */
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 60px;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+/* Header and Navigation styles */
+.order-form {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: white;
+    padding: 50px;
+    border-radius: 50px;
+    width: 70%;
+    
+}
+
+.order-form label {
+    font-weight: bold;
+}
+
+.order-form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.order-form button {
+    width: 240px;
+    border: 0;
+    border-radius: 20px;
+    background-color: red;
+    height: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+#card-container{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+/* Card and form styling */
+#add-card-btn {
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.card {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    max-width: 500px;
+    min-width: 300px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin: 10px;
+}
+
+.card .header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card .order-number {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.card .person-name {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card .order-details {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.card .order-status {
+    margin-top: 10px;
+    width: 80%;
+    padding: 5px;
+    font-size: 14px;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card .ordered-time {
+    font-style: italic;
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.update-btn {
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    border: 0;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.delete-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.card .delete-btn {
+    background-color: #e74c3c;
+}
+
+/* Form styling */
+
+.dish-entry {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    .name{
+        justify-content: space-between;
+    }
+    .search-section{
+        min-width: 200px;
+        width: 100%;
+    }
+    .nav {
+        width: 100%; 
+        height: 50px; 
+        flex-direction: row; 
+        justify-content: space-around;
+        position: fixed;
+        bottom: 0;
+        z-index: 1;
+    }
+    
+    .icon {
+        width: 20px; /* Adjust icon size */
+        height: 20px; /* Adjust icon size */
+
+        color: #666; /* Default icon color */
+        
+    }
+    .nav-btn span {
+        font-size: 12px; /* Text size */
+        color: #666;
+        padding-bottom: 50px; /* Default text color */
+    }
+    
+
+    #add-card-btn {
+        font-size: 14px; 
+        height: 40px; 
+    }
+    .container {
+        padding: 10px;
+        padding-bottom: 60px; 
+        padding-top: 60px; 
+    }
+    .card-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .card {
+        max-width: 100%; 
+        margin: 10px 0; 
+    }
+    
+}
+@media (max-width: 350px) {
+    .name{
+        flex-direction: column;
+        width: 100%;
+        height: 100px;
+    }
+    .container{
+        padding-top: 150px;
+    }
+    #update-card-btn{
+        width: 200px;
+    }
+    #generate-dishes-btn{
+        width: 200px;
+    }
+    .card{
+        min-width: 200px;
+    }
+   
+}

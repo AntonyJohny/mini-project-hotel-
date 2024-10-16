@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OotaScan Dashboard</title>
+    <link rel="stylesheet" href="dash.css">
+</head>
+<body>
+    <div class="name">
+        <div class="demo">
+            <img src="qr-scan.gif" alt="logo">
+            <span>OotaScan</span>
+        </div>
+        <div class="search-container">
+            <section class="search-section">
+                <input type="text" placeholder="Search Name" id="search-bar">
+                <button id="search-btn" class="search-btn">
+                    <img src="search_17dp_666666_FILL0_wght400_GRAD0_opsz20.png" alt="serach">
+                </button>
+            </section>
+        </div>
+    </div>
+    <div class="nav"> 
+        <button class="nav-btn" onclick="changeColor('filter1', this)">
+            <img src="home.png" alt="Home" class="icon on-goin">
+            <span>Home</span>    
+        </button>
+        <button class="nav-btn" onclick="changeColor('filter2', this)">
+            <img src="menu.png" alt="Search" class="icon">
+            <span>Menu</span>
+        </button>
+        <button class="nav-btn" onclick="changeColor('filter3', this)">
+            <img src="clipboard.png" alt="Orders" class="icon">
+            <span>Orders</span>
+        </button>
+        <button class="nav-btn" onclick="changeColor('filter4', this)">
+            <img src="user.png" alt="Account" class="icon">
+            <span>Profile</span>
+        </button>
+        <button class="nav-btn"  onclick="changeColor('filter5', this)">
+            <img src="icons8-logout-50.png" alt="Account" class="icon">
+            <span>Logout</span>
+        </button>
+    </div>
+    <div class="container">
+        <button id="add-card-btn">+Tap to order</button>
+        <div id="card-container"></div>
+        <div class="order-form">
+            <label for="table-number">Table Number:</label>
+            <input type="text" id="table-number" placeholder="Enter Table Number">
+            <br><br>
+            <label for="person-name">Person Name:</label>
+            <input type="text" id="person-name" placeholder="Enter Person Name">
+            <br><br>
+            <label for="dish-count">Number of Dishes:</label>
+            <input type="number" id="dish-count" placeholder="Enter Number of Dishes">
+            <button id="generate-dishes-btn">Generate Dishes</button>
+            <div id="dishes-container"></div> <!-- Container for dynamic dish inputs -->
+            <br><br>
+            <button id="update-card-btn">Update Order</button>
+        </div>
+    </div>
+    <script src="dash.js"></script>
+</body>
+</html>

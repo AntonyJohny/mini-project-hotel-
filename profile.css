@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+    
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    width: 100%;
+}
+
+.name {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+}
+
+.demo {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.name img {
+    width: 50px;
+    height: auto;
+}
+
+.nav {
+    display: flex;
+    background-color: white;
+    overflow: hidden;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    justify-content: space-around;
+    width: 50px;
+}
+
+.nav-btn {
+    background-color: transparent; /* Keep the background transparent */
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 10px; /* Spacing around the button */
+}
+
+.icon {
+    width: 28px; /* Adjust icon size */
+    height: 28px; /* Adjust icon size */
+    margin-bottom: 5px; /* Spacing between icon and text */
+    transition: color 0.3s ease; /* Smooth transition for icon color change */
+    color: #666; /* Default icon color */
+    padding-top: 50px;
+}
+
+.on-goin{
+    filter:invert(27%) sepia(91%) saturate(7481%) hue-rotate(359deg) brightness(102%) contrast(117%);
+}
+
+.nav-btn span {
+    font-size: 12px; /* Text size */
+    color: #666; /* Default text color */
+}
+
+.nav-btn:hover {
+    background-color: #f0f0f0; /* Light gray on hover */
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 60px;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+.profile-pic {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    text-align: center;
+    margin-bottom: 20px;
+    align-items: center;
+    padding: 5px;
+}
+
+.profile-pic img {
+    max-width: 200px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.columns {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.column {
+    width: 100%;
+    padding: 10px;
+    padding-right: 50px;
+}
+
+.column label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.column input, .column textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.b1, .b2,.b3{
+    align-self: center;
+    width: 80%;
+    padding: 10px;
+}
+
+.buttons button{
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+.save-btn {
+    background-color: red;
+    color: white;
+}
+
+.password-btn {
+    background-color: red;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .name{
+        justify-content: space-between;
+    }
+    .search-section{
+        min-width: 200px;
+        width: 100%;
+    }
+    .nav {
+        width: 100%; 
+        height: 50px; 
+        flex-direction: row; 
+        justify-content: space-around;
+        position: fixed;
+        bottom: 0;
+        z-index: 1;
+    }
+    
+    .icon {
+        width: 20px; /* Adjust icon size */
+        height: 20px; /* Adjust icon size */
+
+        color: #666; /* Default icon color */
+        
+    }
+    .nav-btn span {
+        font-size: 12px; /* Text size */
+        color: #666;
+        padding-bottom: 50px; /* Default text color */
+    }
+
+    .columns{
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        padding-right: 50px;
+    }
+    .buttons{
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+    
+    .container{
+        padding-left: 50px;
+    }
+}

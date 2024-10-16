@@ -1,0 +1,88 @@
+.terms-open{
+    width: 80%;
+    text-align: center;
+    padding-left: 60px;
+    padding-top: 60px;
+}
+
+.modal-terms {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+}
+
+.modal-content-terms {
+    background-color: #f9f9f9;
+    margin: 10% auto; /* 10% from the top and centered */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 600px; /* Max width of modal */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.email-area {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.email-area textarea {
+    flex: 1;
+    height: 20px;
+    width: 60%;
+    resize: none; /* Prevent resizing */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 16px;
+    margin-right: 10px; /* Spacing between text area and icon */
+    border-radius: 100px;
+}
+
+.email-area img{
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.terms {
+    margin-top: 20px;
+    text-align: left;
+    max-height: 400px;
+    overflow-y: auto; /* Enable vertical scroll */
+    padding-right: 10px; /* Padding to prevent text touching the border */
+}
+
+.agree {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.term-buttons button{
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.term-buttons button:hover {
+    background-color: darkred;
+}
+
+#agreeCheckbox{
+    accent-color: red;
+}
